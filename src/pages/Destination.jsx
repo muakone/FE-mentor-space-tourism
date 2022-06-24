@@ -1,19 +1,18 @@
-import React, { useEffect, useState } from 'react'
-import Header from '../layout/Header'
-import data from '../data.json'
-import PlanetDestination from '../layout/PlanetDestination'
-import AboutDestination from '../component/AboutDestination'
-
+import React, { useState } from "react";
+import Header from "../layout/Header";
+import data from "../data.json";
+import PlanetDestination from "../layout/PlanetDestination";
+import AboutDestination from "../component/AboutDestination";
 
 const Destination = () => {
-    const [currentData, setCurrentData] = useState(
-        data.destinations.filter((data) => data.name === "Moon")
-    )
-    const [active, setActive] = useState("Moon")
-    const handleDestination = (name) => {
-        setCurrentData(data.destinations.filter((data) => data.name === name))
-        setActive(name)
-    }
+  const [currentData, setCurrentData] = useState(
+    data.destinations.filter((data) => data.name === "Moon")
+  );
+  const [active, setActive] = useState("Moon");
+  const handleDestination = (name) => {
+    setCurrentData(data.destinations.filter((data) => data.name === name));
+    setActive(name);
+  };
   /*  useEffect(() => {
         const menuActiveCard = document
             .querySelector(".destinationPlanet")
@@ -29,8 +28,8 @@ const Destination = () => {
       n.addEventListener("click", setMenuActiveCard)
     );
     }, []) */
-    
-   /* useEffect(() => {
+
+  /* useEffect(() => {
         const menuActiveCard = document
       .querySelector(".rowContainer")
       .querySelectorAll(".rowMenuCard");
@@ -46,33 +45,45 @@ const Destination = () => {
     }, []) */
   return (
     <div className="destinationContainer">
-        <Header />
-        <div className="pickDestination">
-            <header className="destinationHeader">
-                <strong>01</strong><p>pick your destination</p>
-            </header>
-            <section>
-                <nav className='destinationPlanet'>
-                    {data.destinations.map((datas, index) => (
-                        <PlanetDestination click={() => handleDestination(datas.name)}  name={datas.name} key={index} active={active} />
-                    ))}
-                </nav>
-                {currentData && 
+      <Header />
+      <div className="pickDestination">
+        <header className="destinationHeader">
+          <strong className="notHomeHeader">01</strong>
+          <p className="notHomeHeader">pick your destination</p>
+        </header>
+        <section>
+          <div className="destinationImage">
+            <div>
+              {currentData &&
                 currentData.map((data, index) => (
-                    <div className='aboutDestinationContainer' key={index}>
-                        <div>
-                            <img src={data.images.png} alt={data.images.png} />
-                        </div>
-                        <div className='destinationPara'>
-                            <AboutDestination data={data} />
-                        </div>
-                    </div>
-                ))
-                }
-            </section>
-        </div>
+                  <img src={data.images.png} alt="data-images" key={index} />
+                ))}
+            </div>
+          </div>
+          <div className="destinationChange">
+            <nav className="destinationPlanet">
+              {data.destinations.map((datas, index) => (
+                <PlanetDestination
+                  click={() => handleDestination(datas.name)}
+                  name={datas.name}
+                  key={index}
+                  active={active}
+                />
+              ))}
+            </nav>
+            {currentData &&
+              currentData.map((data, index) => (
+                <div className="aboutDestinationContainer" key={index}>
+                  <div className="destinationPara">
+                    <AboutDestination data={data} />
+                  </div>
+                </div>
+              ))}
+          </div>
+        </section>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Destination
+export default Destination;

@@ -4,9 +4,9 @@ const TechContent = ({data}) => {
   return (
     <div className='techTextContainer'>
         <small className='role'>The Terminology...</small>
-        <p className='name'>{data.name}</p>
+        <p className='name tech_crewName'>{data.name}</p>
         <div className="description">
-            <p>{data.description}</p>
+            <p className='para'>{data.description}</p>
         </div>
     </div>
   )

@@ -5,7 +5,7 @@ const AboutDestination = ({data}) => {
     <div className='aboutDestination'>
         <p className='aboutHeader'>{data.name}</p>
         <div className="about">
-            <p>{data.description}</p>
+            <p className='para'>{data.description}</p>
         </div>
         <div className="time">
             <div className="details">

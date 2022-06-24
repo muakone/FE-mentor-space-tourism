@@ -1,9 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Barlow:wght@100;200;300;400;500;600;700;800&family=Bellefair&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Barlow:wght@100;200;300;400;500;600;700;800&family=Bellefair&display=swap");
 :root {
   --trans-blue: rgb(11, 13, 23);
   --light-blue: hsl(231, 77%, 90%);
   --light-cream: rgba(255, 255, 255);
-
 }
 body {
   width: 100vw;
@@ -21,6 +20,33 @@ li {
 }
 button {
   border: none;
+}
+.notHomeHeader {
+  font-size: 28px;
+  text-transform: uppercase;
+  letter-spacing: 4.75px;
+  text-transform: uppercase;
+  font-family: "Barlow Condensed", sans-serif;
+  color: var(--light-cream);
+  line-height: 1px;
+}
+strong.notHomeHeader {
+  color: var(--light-blue);
+  margin-right: 10px;
+}
+.tech_crewName {
+  font-size: 56px;
+  font-family: "Bellefair", serif;
+  margin-top: 0;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.para {
+  line-height: 32px;
+  font-size: 18px;
+  font-family: "Barlow Condensed", sans-serif;
+  color: var(--light-blue);
+  letter-spacing: 1px;
 }
 /* Header */
 .header {
@@ -42,7 +68,7 @@ button {
   z-index: 999;
   margin-left: 20px;
   left: 3%;
-  border-bottom: 1px solid rgba(255,255,255,.25); 
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
 }
 .pageNav {
   background-color: rgba(151, 151, 151, 0.2);
@@ -66,21 +92,21 @@ button {
   cursor: pointer;
   padding-bottom: 17px;
   font-size: 16px;
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
 }
 .active .navLinks {
   border-bottom: solid 3px white;
 }
 .navLinks:hover {
   border-bottom: solid 3px white;
-  opacity: .7;
+  opacity: 0.7;
 }
 .navLinks strong {
   letter-spacing: 2.7px;
   margin-right: 7px;
   margin-top: 3px;
 }
-.navLinks p{
+.navLinks p {
   letter-spacing: 2.7px;
   text-transform: uppercase;
 }
@@ -107,29 +133,25 @@ button {
 }
 .travelSpaceText {
   width: 40%;
-  line-height: 1px;
 }
 .travelSpaceContainer .travel {
   font-size: 28px;
   letter-spacing: 4.75px;
   text-transform: uppercase;
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
   color: var(--light-blue);
-  line-height: 1px;
+  margin: 0;
 }
 .travelSpaceContainer .space {
   font-size: 150px;
   text-transform: uppercase;
-  font-family: 'Bellefair', serif;
+  font-family: "Bellefair", serif;
   letter-spacing: 0;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 .travelSpaceText .spaceText p {
-  line-height: 32px;
-  font-size: 18px;
-  font-family: 'Barlow Condensed', sans-serif;
-  color: var(--light-blue);
   margin-top: -30px;
-  letter-spacing: 1px;
 }
 .exploreBtnContainer {
   display: flex;
@@ -144,7 +166,7 @@ button {
 .exploreBtn:hover {
   border: solid 50px rgba(210, 216, 249, 0.1);
   border-radius: 100vw;
-  transition: .5s ease-out;
+  transition: 0.5s ease-out;
 }
 .exploreBtn button {
   width: 100%;
@@ -153,7 +175,7 @@ button {
   border-radius: 100vw;
   cursor: pointer;
   font-size: 32px;
-  font-family: 'Bellefair', serif;
+  font-family: "Bellefair", serif;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
@@ -178,39 +200,30 @@ button {
   display: flex;
   align-items: center;
 }
-.destinationHeader strong, .destinationHeader p {
-  font-size: 28px;
-  text-transform: uppercase;
-  letter-spacing: 4.75px;
-  text-transform: uppercase;
-  font-family: 'Barlow Condensed', sans-serif;
-  color: var(--light-cream);
-  line-height: 1px;
+.pickDestination section {
+  display: flex;
 }
-.pickDestination strong {
-  color: var(--light-blue);
-  margin-right: 10px;
+.destinationImage img {
+  margin-right: 170px;
 }
 .destinationPlanet {
   display: flex;
-  justify-content: flex-end;
-  margin-right: 120px;
 }
 .destinationroute {
   cursor: pointer;
   margin-right: 24px;
-  transition: .1s;
+  transition: 0.1s;
 }
 .destinationroute.active {
   border-bottom: solid 3px var(--light-cream);
 }
 .destinationroute:hover {
   border-bottom: solid 3px var(--light-cream);
-  opacity: .7;
+  opacity: 0.7;
 }
 .destinationroute p {
   font-size: 16px;
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
   letter-spacing: 2.7px;
   text-transform: uppercase;
   color: var(--light-cream);
@@ -219,31 +232,19 @@ button {
   margin-top: 50px;
   margin-left: 40px;
 }
-.aboutDestinationContainer {
-  display: grid;
-  justify-content: space-between;
-  grid-template-columns: auto auto;
-}
 .destinationPara {
   width: 400px;
 }
 .aboutDestination .aboutHeader {
   font-size: 100px;
   text-transform: uppercase;
-  font-family: 'Bellefair', serif;
+  font-family: "Bellefair", serif;
   margin-top: 20px;
   margin-bottom: 0;
 }
-.aboutDestination .about p {
-  line-height: 32px;
-  font-size: 18px;
-  font-family: 'Barlow Condensed', sans-serif;
-  color: var(--light-blue);
-  letter-spacing: 1px;
-}
 .aboutDestination .time {
   margin-top: 50px;
-  border-top: 1px solid rgba(255,255,255,.25);
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
   padding-top: 10px;
   display: grid;
   grid-template-columns: auto auto;
@@ -251,18 +252,18 @@ button {
 .details {
   line-height: 10px;
 }
- .details .avgDistance {
-  font-family: 'Barlow Condensed', sans-serif;
+.details .avgDistance {
+  font-family: "Barlow Condensed", sans-serif;
   font-size: 14px;
   letter-spacing: 2.36px;
   color: var(--light-blue);
   text-transform: uppercase;
- }
- .details .distance {
-   font-size: 28px;
-   font-family: 'Bellefair', serif;
-   text-transform: uppercase;
- }
+}
+.details .distance {
+  font-size: 28px;
+  font-family: "Bellefair", serif;
+  text-transform: uppercase;
+}
 
 /*Destination stops here*/
 /*crew start here*/
@@ -282,26 +283,11 @@ button {
   display: flex;
   align-items: center;
 }
-.crewHeader strong, .crewHeader p {
-  font-size: 28px;
-  text-transform: uppercase;
-  letter-spacing: 4.75px;
-  text-transform: uppercase;
-  font-family: 'Barlow Condensed', sans-serif;
-  color: var(--light-cream);
-  line-height: 1px;
-}
-.crewHeader strong {
-  color: var(--light-blue);
-  margin-right: 10px;
-}
 .crewContentContainer {
   margin: 50px 150px 0px 140px;
 }
-.aboutCrewContainer {
-  display: grid;
-  grid-template-columns: auto auto;
-  justify-content: space-between;
+.mainCrewContent {
+  display: flex;
 }
 .aboutCrew {
   display: flex;
@@ -312,28 +298,16 @@ button {
 .aboutCrew .role {
   font-size: 32px;
   text-transform: uppercase;
-  font-family: 'Bellefair', serif;
+  font-family: "Bellefair", serif;
   color: var(--light-blue);
   margin-top: 0;
   margin-bottom: 15px;
 }
 .aboutCrew .name {
-  font-size: 56px;
-  font-family: 'Bellefair', serif;
-  margin-top: 0;
   margin-bottom: 15px;
-  text-transform: uppercase;
-  white-space: nowrap;
 }
 .aboutCrew .bio {
   width: 400px;
-}
-.aboutCrew .bio p {
-  line-height: 32px;
-  font-size: 18px;
-  font-family: 'Barlow Condensed', sans-serif;
-  color: var(--light-blue);
-  letter-spacing: 1px;
 }
 .crewNav {
   display: flex;
@@ -346,13 +320,16 @@ button {
   margin-bottom: 20px;
   margin-right: 17px;
   cursor: pointer;
-  margin-top: -90px;
+  margin-top: 50px;
 }
 .crewRoute:hover {
   background-color: rgba(151, 151, 151, 0.8);
 }
 .crewRoute.active {
   background-color: white;
+}
+.crewImage img {
+  margin-left: 150px;
 }
 /*crew Ends here*/
 /*Technology starts here*/
@@ -375,18 +352,8 @@ button {
   display: flex;
   align-items: center;
 }
-.techHeader strong, .techHeader p {
-  font-size: 28px;
-  text-transform: uppercase;
-  letter-spacing: 4.75px;
-  text-transform: uppercase;
-  font-family: 'Barlow Condensed', sans-serif;
-  color: var(--light-cream);
-  line-height: 1px;
-}
-.techHeader strong {
-  color: var(--light-blue);
-  margin-right: 10px;
+.techDescription {
+  display: flex;
 }
 .techNav {
   display: flex;
@@ -396,6 +363,7 @@ button {
 .mainTech section {
   display: flex;
   margin-top: 30px;
+  justify-content: space-between;
 }
 .techRoute {
   height: 60px;
@@ -409,7 +377,7 @@ button {
   justify-content: center;
   align-items: center;
   font-size: 32px;
-  font-family: 'Bellefair', serif;
+  font-family: "Bellefair", serif;
   letter-spacing: 2px;
   color: white;
   cursor: pointer;
@@ -429,9 +397,8 @@ button {
   float: right;
   width: 100%;
 }
-.techImage{
+.techImage {
   float: right;
-
 }
 .techText {
   display: flex;
@@ -445,26 +412,185 @@ button {
 .techTextContainer .role {
   font-size: 16px;
   text-transform: uppercase;
-  font-family: 'Barlow Condensed', serif;
+  font-family: "Barlow Condensed", serif;
   color: var(--light-blue);
   margin-top: 0;
   margin-bottom: 15px;
   letter-spacing: 2.7px;
 }
 .techTextContainer .name {
-  font-size: 56px;
-  font-family: 'Bellefair', serif;
-  margin-top: 0;
   margin-bottom: 3px;
-  text-transform: uppercase;
-  white-space: nowrap;
 }
 .techTextContainer .description p {
-  line-height: 32px;
-  font-size: 18px;
-  font-family: 'Barlow Condensed', sans-serif;
-  color: var(--light-blue);
-  letter-spacing: 1px;
   margin-top: 0;
 }
 /*Technology ends here*/
+@media (max-width: 1100px) {
+  .navContainer {
+    margin: 0 30px 0 30px;
+  }
+  .pickDestination,
+  .crewContentContainer,
+  .mainTech {
+    margin: 50px 20px;
+  }
+  .mainTech {
+    margin: 50px 0 50px 20px;
+  }
+  .destinationHeader,
+  .crewHeader,
+  .techHeader {
+    margin-left: 40px;
+  }
+  .destinationPlanet {
+    margin-right: 5rem;
+  }
+  .destinationImage img,
+  .aboutCrewContainer img {
+    width: 90%;
+  }
+  .destinationImage img {
+    margin-right: 70px;
+  }
+  .techImage img {
+    width: 100%;
+  }
+  .crewImage img {
+    display: flex;
+    justify-content: flex-end;
+    margin: 70px auto 0 auto;
+  }
+  .tech_crewName {
+    white-space: normal;
+  }
+  .crewRoute {
+    margin-top: 0px;
+  }
+}
+@media (max-width: 900px) {
+  .header {
+    justify-content: space-between;
+    padding-top: 0;
+  }
+  .header span {
+    display: none;
+  }
+  .pageNav {
+    width: 70%;
+  }
+  .homeContainer {
+    background-image: url(./assets/home/background-home-tablet.jpg);
+  }
+  .travelSpaceContainer {
+    flex-direction: column;
+  }
+  .travelSpaceText {
+    width: 70%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto 170px auto;
+    justify-content: center;
+  }
+  .para {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .exploreBtn {
+    margin-bottom: 40px;
+  }
+  .destinationContainer {
+    background-image: url(./assets/destination/background-destination-tablet.jpg);
+  }
+  .notHomeHeader {
+    font-size: 20px;
+    letter-spacing: 3.38px;
+  }
+  .destinationPlanet {
+    margin: 20px auto;
+    justify-content: center;
+  }
+  .pickDestination section {
+    margin-top: 60px;
+    flex-direction: column;
+  }
+  .aboutDestinationContainer {
+    grid-template-columns: auto;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .destinationImage {
+    margin: 0 auto;
+    margin-right: 0;
+  }
+  .destinationImage img {
+    width: 70%;
+    margin-bottom: 30px;
+  }
+  .aboutDestination .aboutHeader {
+    font-size: 80px;
+  }
+  .destinationPara {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .crewContainer {
+    background-image: url(./assets/crew/background-crew-tablet.jpg);
+  }
+  .mainCrewContent {
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+  .aboutCrew {
+    margin-top: 70px;
+  }
+  .aboutCrew .role {
+    font-size: 24px;
+  }
+  .tech_crewName {
+    font-size: 40px;
+  }
+  .aboutCrew .bio {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .crewNav {
+    margin-top: 10px;
+    justify-content: center;
+  }
+  .crewImage img {
+    justify-content: center;
+    margin-bottom: -48px;
+  }
+  .techContainer {
+    background-image: url(./assets/technology/background-technology-tablet.jpg);
+  }
+  .mainTech {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .mainTech section {
+    flex-direction: column-reverse;
+  }
+  .techDescription {
+    flex-direction: column;
+    margin: 50px auto;
+    justify-content: center;
+  }
+  .techNav {
+    flex-direction: row;
+    margin-bottom: 40px;
+  }
+  .techRoute {
+    margin-right: 30px;
+  }
+  .techText {
+    margin-left: 0;
+  }
+  .techTextContainer {
+    width: 100%;
+    text-align: center;
+  }
+}
