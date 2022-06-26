@@ -14,7 +14,7 @@ const Tech = () => {
     setActive(name);
   };
 
-  function getWindowSize() {
+  const getWindowSize = () => {
     const { innerWidth } = window;
     return { innerWidth };
   }

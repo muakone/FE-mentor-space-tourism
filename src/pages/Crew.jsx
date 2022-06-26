@@ -22,7 +22,7 @@ const Crew = () => {
           <p className="notHomeHeader">Meet your crew</p>
         </header>
         <section className="mainCrewContent">
-          <div>
+          <div className="flex-reverse">
             <div className="crewContent">
               {currentData &&
                 currentData.map((data, index) => (

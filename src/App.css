@@ -62,7 +62,7 @@ strong.notHomeHeader {
   border-radius: 50%;
   box-sizing: border-box;
 }
-.header span {
+.header .hr-line {
   width: 50vw;
   position: relative;
   z-index: 999;
@@ -71,11 +71,14 @@ strong.notHomeHeader {
   border-bottom: 1px solid rgba(255, 255, 255, 0.25);
 }
 .pageNav {
-  background-color: rgba(151, 151, 151, 0.2);
+  background-color: hsla(0,0%,100%,.04);
   height: 90px;
   width: 85vw;
-  -webkit-backdrop-filter: blur(81.55%);
-  backdrop-filter: blur(81.55%);
+  -webkit-backdrop-filter: blur(81.5845px);
+  backdrop-filter: blur(81.5845px);
+}
+.iconClose {
+  display: none;
 }
 .navContainer {
   margin: 0 120px 0 100px;
@@ -472,7 +475,7 @@ strong.notHomeHeader {
     justify-content: space-between;
     padding-top: 0;
   }
-  .header span {
+  .header .hr-line {
     display: none;
   }
   .pageNav {
@@ -592,5 +595,154 @@ strong.notHomeHeader {
   .techTextContainer {
     width: 100%;
     text-align: center;
+  }
+}
+@media(max-width:640px) {
+  .header {
+    margin-right: 20px;
+    padding-top: 15px;
+    margin-left: 20px;
+  }
+  #toggle {
+    cursor: pointer;
+  }
+  .pageNav {
+    height: 100vh;
+    width: 67vw;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateX(0%);
+    transition: .5s;
+    z-index: 999px;
+  }
+  .transparent {
+    width: 100vw;
+    background-color: transparent;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
+  }
+  .iconClose {
+    display: block;
+  }
+  #close {
+    cursor: pointer;
+    float: right;
+    margin-top: 25px;
+    margin-right: 30px;
+  }
+  .navContainer {
+    margin: 80px 0 0 10px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .active .navLinks, .navLinks:hover {
+    border-bottom: none;
+  }
+  .travelSpaceContainer .travel {
+    font-size: 16px;
+    letter-spacing: 2.7px;
+  }
+  .travelSpaceContainer .space {
+    font-size: 100px;
+  }
+  .para {
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .notHomeHeader {
+    font-size: 16px;
+    letter-spacing: 2.7px;
+  }
+  .destinationroute p {
+    font-size: 14px;
+    letter-spacing: 2.36px;
+  }
+  .aboutDestination .aboutHeader {
+    font-size: 56px;
+  }
+  .aboutCrew .role {
+    font-size: 16px;
+  }
+  .tech_crewName {
+    font-size: 24px;
+  }
+  .techTextContainer .role {
+    font-size: 14px;
+    letter-spacing: 2.36px;
+  }
+  .navLinks {
+    padding-bottom: 0;
+  }
+  .travelSpaceText, .destinationPara {
+    width: 95%;
+  }
+  .pickDestination section {
+    margin-left: 0;
+  }
+  .destinationImage img {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .aboutDestination .time {
+    grid-template-columns: auto;
+  }
+  .details {
+    margin-bottom: 30px;
+  }
+  .techHeader, .crewHeader, .destinationHeader {
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+  }
+  .mainCrewContent {
+    flex-direction: column-reverse;
+  }
+  .crewImage {
+    width: 96%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    margin: 0 auto;
+    display: flex;
+  }
+  .crewImage img {
+    width: 70%;
+    margin-bottom: 0;
+    margin-top: 5px;
+  }
+  .flex-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .aboutCrew {
+    margin-top: 20px;
+  }
+  .crewNav {
+    margin-top: 35px;
+  }
+  .crewRoute {
+    width: 10px;
+    height: 10px;
+  }
+  .techNav {
+    margin-bottom: 20px;
+  }
+  .techRoute {
+    height: 40px;
+    width: 40px;
+    font-size: 25px;
+    margin-right: 20px;
+  }
+  .techTextContainer {
+    width: 90%;
+  }
+  .techTextContainer .name {
+    margin-bottom: 10px;
+  }
+  .techTextContainer .role {
+    line-height: 32px;
   }
 }
