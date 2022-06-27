@@ -44,7 +44,7 @@ const Header = () => {
             
             {
               toggle &&
-              <div className="transparent">
+              <div className="transparent" onClick={toggleNav}>
                 <NavTab toggleNav={toggleNav} />
               </div>
                

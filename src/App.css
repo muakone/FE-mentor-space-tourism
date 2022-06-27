@@ -59,7 +59,7 @@ strong.notHomeHeader {
 }
 .header .navBrand {
   background-color: var(--light-cream);
-  border-radius: 50%;
+  border-radius: 100vw;
   box-sizing: border-box;
 }
 .header .hr-line {
@@ -635,12 +635,24 @@ strong.notHomeHeader {
     margin-right: 30px;
   }
   .navContainer {
-    margin: 80px 0 0 10px;
+    margin: 80px 0 0 40px;
     flex-direction: column;
     align-items: flex-start;
   }
+  .navLinks {
+    margin-top: 5px;
+  }
+  .navLinks strong  {
+    margin-top: 0;
+  }
   .active .navLinks, .navLinks:hover {
     border-bottom: none;
+  }
+  .travelSpaceContainer {
+    margin-top: 30px;
+  }
+  .travelSpaceText {
+    margin-bottom: 30px;
   }
   .travelSpaceContainer .travel {
     font-size: 16px;
@@ -679,6 +691,13 @@ strong.notHomeHeader {
   }
   .travelSpaceText, .destinationPara {
     width: 95%;
+  }
+  .destinationPlanet {
+    justify-content: space-between;
+    width: 65%;
+  }
+  .destinationroute {
+    margin-right: 0;
   }
   .pickDestination section {
     margin-left: 0;
