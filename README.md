@@ -24,8 +24,16 @@ Users should be able to:
 
 ### Screenshot
 
+#### Desktop screenshot
+
 ![Desktop screenshot](./src/screenshots/desktop-space_travel.png)
+
+#### Tablet screenshot
+
 ![Tablet screenshot](./src/screenshots/tablet-space_travel.png)
+
+#### Mobile screenshot
+
 ![Mobile scrrenshot](./src/screenshots/mobile-space_travel.png)
 
 ### Links
@@ -43,7 +51,7 @@ Users should be able to:
 - CSS Grid
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
- - [React Router](https://reactrouter.com/)
+ - [React Router](https://reactrouter.com/) - React library for routing
 
 
 ## Author
