@@ -481,6 +481,9 @@ strong.notHomeHeader {
   .pageNav {
     width: 70%;
   }
+  .navLinks strong  {
+    margin-top: 0;
+  }
   .homeContainer {
     background-image: url(./assets/home/background-home-tablet.jpg);
   }
@@ -641,9 +644,6 @@ strong.notHomeHeader {
   }
   .navLinks {
     margin-top: 5px;
-  }
-  .navLinks strong  {
-    margin-top: 0;
   }
   .active .navLinks, .navLinks:hover {
     border-bottom: none;
